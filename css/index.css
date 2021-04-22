@@ -1,8 +1,0 @@
-div {
-  display: flex;
-  flex-flow: row-reverse wrap;
-}
-
-body {
-  background-color: lightblue;
-}
