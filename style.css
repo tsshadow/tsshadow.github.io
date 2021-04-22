@@ -52,5 +52,6 @@ body {
   border-bottom-color: #fff;
 }
 
-.Experience { list-style: none }
-
+ul{
+     list-style:none;
+}
