@@ -1,2 +1,1 @@
-### Teun Schriks
 ### Software Engineer
