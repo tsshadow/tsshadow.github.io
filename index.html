@@ -1,66 +1,91 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en" class="h-full">
 <head>
-  <meta charset="utf-8">
-  <title>Teun Schriks</title>
+    <meta charset="utf-8"/>
+    <title>Teun Schriks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <!-- Bootstrap core CSS -->
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
-
-  <!-- Custom styles for this template -->
-  <link href="style.css" rel="stylesheet">
+    <!-- Tailwind via CDN (for quick use; for production use PostCSS or Svelte setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="d-flex h-100 text-center text-white bg-dark">
 
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-     <header class="mb-auto">
-      <div>
-        <h3 class="float-md-start mb-0"></h3>
-        <nav class="nav nav-masthead justify-content-center float-md-end">
-        </nav>
-      </div>
-    </header>
+<body class="bg-[#121212] text-white flex flex-col min-h-screen">
+<main class="flex-grow py-10">
+    <div class="container mx-auto text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold">Teun Schriks</h1>
+        <p class="text-lg text-gray-400 mt-2">Full stack developer</p>
+    </div>
 
-    <main class="cover-content ">
-      <p class="h1">Teun Schriks</p>
-      <p class="h3 text-muted">Full stack developer</p>
-        <ul class="experience-list">
-          <li class="experience-list-item-important">Backend experience</li>
-          <li class="experience-list-item">C++</li>
-          <li class="experience-list-item">Python</li>
-        </ul>
-        <ul class="experience-list">
-          <li class="experience-list-item-important">Frontend experience</li>
-          <li class="experience-list-item">JavaScript</li>
-          <li class="experience-list-item">TypeScript</li>
-          <li class="experience-list-item">PHP</li>
-          <li class="experience-list-item">HTML</li>
-        </ul>
-       <a class="linkedin-btn" href="https://www.linkedin.com/in/teunschriks/">
-         <img src="linkedin-logo-black.png"></img>
-       </a>
-    </main>
+    <div class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-3xl text-center mb-10">Ervaring</h2>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Backend -->
+            <div class="bg-[#1f1f1f] p-6 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1">
+                <h5 class="text-white text-xl font-semibold mb-4">🖥️ Backend</h5>
+                <ul class="space-y-1">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                </ul>
+                <div class="text-sm text-gray-400 mt-4">
+                    Tooling: Node.js, Mutagen, librosa
+                </div>
+            </div>
 
-    <footer class="mt-auto text-white-50">
+            <!-- Frontend -->
+            <div class="bg-[#1f1f1f] p-6 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1">
+                <h5 class="text-white text-xl font-semibold mb-4">💻 Frontend</h5>
+                <ul class="space-y-1">
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Svelte</li>
+                    <li>Aurelia</li>
+                </ul>
+                <div class="text-sm text-gray-400 mt-4">
+                    Tooling: Vite, TailwindCSS
+                </div>
+            </div>
 
-    </footer>
-  </div>
+            <!-- Mobile -->
+            <div class="bg-[#1f1f1f] p-6 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1">
+                <h5 class="text-white text-xl font-semibold mb-4">📱 Mobile</h5>
+                <ul class="space-y-1">
+                    <li>Android</li>
+                    <li>Kotlin</li>
+                    <li>Java</li>
+                </ul>
+                <div class="text-sm text-gray-400 mt-4">
+                    Tooling: Android Studio, ADB
+                </div>
+            </div>
+
+            <!-- Infra -->
+            <div class="bg-[#1f1f1f] p-6 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1">
+                <h5 class="text-white text-xl font-semibold mb-4">🛠️ Infra & DevOps</h5>
+                <ul class="space-y-1">
+                    <li>Docker</li>
+                    <li>Docker Swarm</li>
+                    <li>GitLab CI</li>
+                </ul>
+                <div class="text-sm text-gray-400 mt-4">
+                    Tooling: pnpm, Git, Home Assistant
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-10">
+        <a href="https://www.linkedin.com/in/teunschriks/" target="_blank">
+            <img src="linkedin-logo-black.png" alt="LinkedIn" class="h-10 mx-auto"/>
+        </a>
+    </div>
+</main>
+
+<footer class="text-center py-4 text-gray-400 text-sm">
+    &copy; Teun Schriks
+</footer>
 </body>
 </html>
